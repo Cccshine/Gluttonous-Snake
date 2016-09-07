@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贪吃蛇</title>
+	<link rel="icon" href="img/icon.jpg">
+	<link rel="stylesheet" type="text/css" href="css/Snake.css">
+	
+</head>
+<body>
+	<audio id="Background-AudioPlayer" loop="loop" preload="auto" >
+		<source src="audio/bg.mp3" type="audio/mp3">
+		<source src="audio/bg.ogg" type="audio/ogg">
+		You browser does not support the audio tag.
+	</audio>
+	<audio id="GameOver-AudioPlayer" preload="auto">
+		<source src="audio/gameover.mp3" type="audio/mp3">
+		<source src="audio/gameover.ogg" type="audio/ogg">
+	</audio>
+	<audio  id="Score-AudioPlayer" preload="auto">
+		<source src="audio/score.mp3" type="audio/mp3">
+		<source src="audio/score.ogg" type="audio/ogg">
+	</audio>
+	<h1>Snake</h1>
+	<hr>
+	<canvas id="Snake-Canvas" width="300" height="150"></canvas>
+	<hr>
+	<form>
+		<input type="button" name="Start" value="开始">
+		<input type="button" name="Stop" value="暂停">
+		<label>游戏模式：</label>
+		<select name= "Mode">
+			<option>极速</option>
+			<option>快速</option>
+			<option selected="selected">正常</option>
+			<option>慢速</option>
+		</select>
+	</form>
+	<p>当前用时：<span id="Snake-Time">00:00:00</span> 当前得分：<span id="Snake-Score">0</span> 蛇长：<span id="Snake-Length">3</span></p>
+	
+</body>
+<script type="text/javascript" src="js/Snake.js"></script>
+</html>

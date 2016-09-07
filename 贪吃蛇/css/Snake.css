@@ -1,0 +1,27 @@
+body{
+	background:#31c331;
+	text-align:center;
+	font-family:'Times New Roman';
+}
+h1{
+	margin: 10px 0;
+}
+canvas{
+	background:white;
+	width:1000px;
+	height:500px;
+}
+form{
+	display: inline-block;
+	margin-right: 20px;
+}
+form input{
+	margin-right: 20px;
+}
+p{
+	margin: 0;
+	display: inline-block;
+} 
+p span{
+	margin-right: 20px;
+}

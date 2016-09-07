@@ -1,0 +1,26 @@
+body{
+	background: url(../img/bg.jpg) no-repeat;
+	background-size:cover; 
+	text-align: center;
+}
+h1{
+
+	color: #f1c232;
+}
+form{
+	width: 200px;
+	margin: 30px auto;
+}
+input{
+	width: 200px;
+	height: 30px;
+	margin-top: 20px;
+	background: #f1c232;
+	color: white;
+	font-weight: bold;
+}
+select{
+	width: 200px;
+	border: none;
+	display: none;
+}
