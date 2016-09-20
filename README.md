@@ -1,6 +1,6 @@
 # Gluttonous-Snake
 利用Canvas及JavaScript实现的贪吃蛇
-[在线查看](http://www.caojiacong.cn)
+[在线查看](http://www.caojiacong.cn/snake)
 
 ## Introduction
 * 运用Canvas实现游戏画面、JavaScript实现逻辑关系
