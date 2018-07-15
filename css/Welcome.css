@@ -1,11 +1,10 @@
 body{
-	background: url(../img/bg.jpg) no-repeat;
-	background-size:cover; 
+	background: #16c79e;;
 	text-align: center;
 }
 h1{
 
-	color: #f1c232;
+	color: #fff;
 }
 form{
 	width: 200px;
@@ -15,7 +14,7 @@ input{
 	width: 200px;
 	height: 30px;
 	margin-top: 20px;
-	background: #f1c232;
+	background: #D0648A;
 	color: white;
 	font-weight: bold;
 }

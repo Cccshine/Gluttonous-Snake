@@ -11,6 +11,6 @@ oEnter.onclick = function(){
 oSelect.onclick= function(){
 	oMode.style.display = 'block';
 }
-oMode.onclick = function(){
+oMode.onchange = function(){
 	sValue = this.value;
 }

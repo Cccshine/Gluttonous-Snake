@@ -261,9 +261,42 @@ document.body.onkeydown = function(ev) {
 	return false; //阻止事件默认行为
 }
 
+//移动端触摸移动
+var startX = 0,
+	startY = 0,
+	endX = 0,
+	endY = 0;
+snakeCanvas.addEventListener("touchstart", function (event) {
+	startX = event.touches[0].pageX;
+	startY = event.touches[0].pageY;
+	event.preventDefault();
+});
+snakeCanvas.addEventListener("touchmove", function (event) {
+	endX = event.touches[0].pageX;
+	endY = event.touches[0].pageY;
+	event.preventDefault();
+});
+snakeCanvas.addEventListener("touchend", function (event) {
+	event.preventDefault();
+	var disX = endX - startX;
+	var disY = endY - startY;
+	if (Math.abs(disX) > Math.abs(disY) && disX < 0) { //左
+		snake.nDirect = 1;
+	} else if (Math.abs(disX) < Math.abs(disY) && disY < 0) { //上
+		snake.nDirect = 2;
+	} else if (Math.abs(disX) > Math.abs(disY) && disX > 0) { //右
+		snake.nDirect = 3;
+	} else if (Math.abs(disX) < Math.abs(disY) && disY > 0) { //下
+		snake.nDirect = 4;
+	} else { //未滑动
+		console.log('未滑动')
+	}
+});
+
+
 //游戏模式选择
 
-oMode.onclick = selectMode;
+oMode.onchange = selectMode;
 
 function selectMode() {
 	switch (oMode.value) {
